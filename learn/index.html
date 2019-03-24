@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Learn</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+				--mdc-theme-primary:#E91E63;
+				--mdc-theme-secondary:#9ccc65;
+				padding:56px 20px 0px 20px;
+            }
+			code {
+				font-size: 1rem;
+				background: rgba(238,238,238,1);
+				border-radius: 1px;
+			}
+        </style>
+    </head>
+    <body>
+	<aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__content">
+	<a class="material-icons mdc-top-app-bar__navigation-icon" id="menu-open">close</a>
+      <div class="mdc-list">
+        <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry" aria-selected="true">
+          <span class="mdc-list-item__text">Home</span>
+        </a>
+        <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/download">
+          <span class="mdc-list-item__text">Download</span>
+        </a>
+        <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/get_started">
+          <span class="mdc-list-item__text">Get Started</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+        <header class="mdc-top-app-bar mdc-elevation--z6" style="right:0;left:0;top:0;perspective:0px;">
+			<div class="mdc-top-app-bar__row">
+				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+					<a class="material-icons mdc-top-app-bar__navigation-icon" id="menu-open">menu</a>
+					<span class="mdc-top-app-bar__title">Learn</span>
+				</section>
+				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+					<a class="github-button" href="https://github.com/Craftingexpert1/Craftingexpert1.github.io/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Craftingexpert1/Craftingexpert1.github.io on GitHub">Fork me on github!</a>
+				</section>
+			</div>
+		</header>
+		<p class="mdc-typography--body1">The basic function for jBerry is <br><code>jBerry(selector(querySelector string))</code>.<br><br> 
+		
+		You can run <code>jBerry("body")</code> and it will return an array of objects. It only has one at the moment, since there is (most likely) only one body. To get something from the array of objects, and in our case, the body, we can do <code>jBerry("body").get(0)</code>. It will return the first object in the array, which is the body. Inspect the page and navigate to the console to try this.
+		<br><br>
+		There are lots of things you can do with jBerry. There is:<br><br>
+			<code>
+			d.get(number): Gets a specific object out of an array of the chosen,<br>
+			d.hide(): Hides the object,<br>
+			d.show(): Shows the object,<br>
+			d.tgl(): If hidden, shows the object, if shown, hides the object,<br>
+			d.outhtml(string): Edits the outerHTML of object,<br>
+			d.html(string): Edits the innerHTML of object,<br>
+			d.text(string): Edits the text of object,<br>
+			d.clsAdd(string): Adds a class to object,<br>
+			d.clsRmv(string): Removes a class from object,<br>
+			d.clsTgl(string): Adds/removes a class to/from object,<br>
+			d.attr(name_string, value_string): Edits the attribute of an object: following name_tring=value_tring,<br>
+			d.id(string):Edits the id of an object,<br>
+			d.clk(function(){}):Makes an event listener for click,<br>
+			d.fcs(function(){}):Makes an event listener for focus,<br>
+			d.blur(function(){}):Makes an event listener for blur,<br>
+			d.mseover(function(){}):Makes an event listener for mouse over,<br>
+			d.msedown(function(){}):Makes an event listener for mouse down,<br>
+			d.mseup(function(){}):Makes an event listener for mouse up,<br>
+			d.msedbl(function(){}):Makes an event listener for double click,<br>
+			d.mseenter(function(){}):Makes an event listener for mouse enter,<br>
+			d.mseright(function(){}):Makes an event listener for context menu (the menu that pops open when you right click),<br>
+			d.mseleave(function(){}):Makes an event listener for mouse leave,<br>
+			d.msemove(function(){}):Makes an event listener for mouse move,<br>
+			d.mseout(function(){}):Makes an event listener for blur,<br>
+			d.keypress(function(){}):Makes an event listener for keypress,<br>
+			d.style(string):Edits the style attribute,<br>
+			d.bg(string):Edits the background,<br>
+			d.color(string):Edits the text color,<br>
+			d.border(string):Edits the border,<br>
+			d.transform(string):Edits the transform,<br>
+			d.transl(axis, howmuch):Edits the translate,on the axis you pick and howmuch you want it to translate,<br>
+			d.rot(axis, howmuch):Edits the rotate, on the axis you pick and howmuch you want it to rotate,<br>
+			d.scl(axis, howmuch):Edits the scale, on the axis you pick and howmuch you want it to scale,<br>
+			d.skew(axis, howmuch):Edits the skew, on the axis you pick and howmuch you want it to skew,<br>
+			d.persp(string):Edits the perspective value,<br>
+			d.anim(string):Edits the animation property,<br>
+			</code>
+		</p>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js"></script>
+        <script>
+			mdc.topAppBar.MDCTopAppBar.attachTo(jBerry(".mdc-top-app-bar").get(0));
+			drawer = new mdc.drawer.MDCDrawer.attachTo(jBerry(".mdc-drawer").get(0));
+			jBerry("#menu-open").clk(function() {
+				drawer.open = !drawer.open;
+			});
+		</script>
+    </body>
+</html>
