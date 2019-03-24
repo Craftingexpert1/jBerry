@@ -2,62 +2,65 @@
 <html>
     <head>
         <title>jBerry</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
         <style>
             body {
                 font-family: "Roboto", sans-serif;
-				--mdc-theme-primary:#E91E63;
-				--mdc-theme-secondary:#9ccc65;
-				padding-top:56px;
-				padding-left:10px;
+                --mdc-theme-primary:#E91E63; --mdc-theme-secondary:#9ccc65; padding-top: 56px;
+                padding-left: 10px;
             }
         </style>
     </head>
     <body>
-	<aside class="mdc-drawer mdc-drawer--dismissible">
-    <div class="mdc-drawer__content">
-	<a class="material-icons mdc-top-app-bar__navigation-icon" id="menu-open">close</a>
-      <div class="mdc-list">
-        <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/download" aria-selected="true">
-          <span class="mdc-list-item__text">Download</span>
-        </a>
-        <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/get_started">
-          <span class="mdc-list-item__text">Get Started</span>
-        </a>
-        <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/learn">
-          <span class="mdc-list-item__text">Learn</span>
-        </a>
-      </div>
-    </div>
-  </aside>
+        <aside class="mdc-drawer mdc-drawer--dismissible">
+            <div class="mdc-drawer__content">
+                <a class="material-icons mdc-top-app-bar__navigation-icon" id="menu-open">close</a>
+                <div class="mdc-list">
+                    <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/download" aria-selected="true">
+                        <span class="mdc-list-item__text">Download</span>
+                    </a>
+                    <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/get_started">
+                        <span class="mdc-list-item__text">Get Started</span>
+                    </a>
+                    <a class="mdc-list-item" href="https://craftingexpert1.github.io/jberry/learn">
+                        <span class="mdc-list-item__text">Learn</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
         <header class="mdc-top-app-bar mdc-elevation--z6" style="right:0;left:0;top:0;perspective:0px;">
-			<div class="mdc-top-app-bar__row">
-				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-					<a class="material-icons mdc-top-app-bar__navigation-icon" id="menu-open">menu</a>
-					<span class="mdc-top-app-bar__title">jBerry</span>
-				</section>
-				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-					<a class="github-button" href="https://github.com/Craftingexpert1/Craftingexpert1.github.io/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Craftingexpert1/Craftingexpert1.github.io on GitHub">Fork me on github!</a>
-				</section>
-			</div>
-		</header>
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <a class="material-icons mdc-top-app-bar__navigation-icon" id="menu-open">menu</a>
+                    <span class="mdc-top-app-bar__title">jBerry</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    <a class="github-button" href="https://github.com/Craftingexpert1/Craftingexpert1.github.io/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Craftingexpert1/Craftingexpert1.github.io on GitHub">Fork me on github!</a>
+                </section>
+            </div>
+        </header>
         <p class="mdc-typography--body1">jBerry is a library similar to jQuery, but with some more stuff (and maybe some less), and more simply written, with less letters you have to use.</p>
-		<p><a href="https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js" download="jberry"><i class="material-icons mdc-icon-button">cloud_download</i>Download jBerry</a> or use the CDN: <code>https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js</code>
-		<br><br><a href="https://craftingexpert1.github.io/" style="text-decoration:none;color:var(--mdc-theme-primary);">Back to home!</a>	
-		<div style="background:url(jberry-pic.png) no-repeat center;height:200px;transform:translateZ(-60px);perspective: 2px;"></div>
-		<script async defer src="https://buttons.github.io/buttons.js"></script>
-		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js"></script>
+        <p>
+            <a href="https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js" download="jberry">
+                Download jBerry
+            </a>
+            or use the CDN: <code>https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js</code>
+            <br>
+            <br>
+        <div style="background:url(jberry-pic.png) no-repeat center;height:200px;transform:translateZ(-60px);perspective: 2px;"></div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Craftingexpert1/jBerry@0.98/jberry.js"></script>
         <script>
-			mdc.topAppBar.MDCTopAppBar.attachTo(jBerry(".mdc-top-app-bar").get(0));
-			drawer = new mdc.drawer.MDCDrawer.attachTo(jBerry(".mdc-drawer").get(0));
-			jBerry("#menu-open").clk(function() {
-				drawer.open = !drawer.open;
-			});
-		</script>
+            mdc.topAppBar.MDCTopAppBar.attachTo(jBerry(".mdc-top-app-bar").get(0));
+            drawer = new mdc.drawer.MDCDrawer.attachTo(jBerry(".mdc-drawer").get(0));
+            jBerry("#menu-open").clk(function() {
+                drawer.open = !drawer.open;
+            });
+        </script>
     </body>
 </html>
